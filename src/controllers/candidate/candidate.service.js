@@ -25,6 +25,7 @@ export default {
             })
 
         } catch (err) {
+            console.log("========err----",err)
             return responseObject(req, res, {}, responseCode.INTERNAL_SERVER_ERROR, false, "Something went Wrong")
 
         }
