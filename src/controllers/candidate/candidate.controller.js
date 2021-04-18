@@ -12,6 +12,7 @@ export default {
                 return candidate
             } 
         }).catch(err => {
+            console.log("======errors",err)
             return responseObject(req, res, {} , responseCode.INTERNAL_SERVER_ERROR, false , "Something went Wrong")
         })
     },
